@@ -57,6 +57,7 @@ body {
 main {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
+    background-color: var(--very-light-gray);
 }
 main .card-content {
     min-height: 100vh;
