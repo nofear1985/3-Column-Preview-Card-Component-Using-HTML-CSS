@@ -59,7 +59,7 @@ main {
     padding-bottom: var(--section-padding);
     background-color: var(--very-light-gray);
 }
-main .card-content {
+.card-content {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -71,48 +71,49 @@ main .card-content {
         flex-direction: column;
     }
 }
-main .card-content .card-box {
+.card-box {
     flex-basis: 307px;
     padding: 48px;
-    background-color: green;
 }
-main .card-content .box1 {
+.box1 {
     background-color: var(--bright-orange);
     border-radius: 8px 0 0 8px;
 }
-main .card-content .box2 {
+.box2 {
     background-color: var(--dark-cyan);
 }
-main .card-content .box3 {
+.box3 {
     background-color: var(--very-dark-cyan);
     border-radius: 0 8px 8px 0;
 }
 @media (max-width: 767px) {
     main .card-content .box1 {
-        border-radius: 8px 8px 0 0 !important;
+        border-radius: 8px 8px 0 0 ;
     }
     main .card-content .box2 {
-        border-radius: 0 !important;
+        border-radius: 0 ;
     }
     main .card-content .box3 {
-        border-radius: 0 0 8px 8px !important;
+        border-radius: 0 0 8px 8px ;
     }
 }
 @media (max-width: 991px) {
-    main .card-content .box1 {
+    .box1 {
         border-radius: 8px 0 0 0;
     }
-    main .card-content .box2 {
+    .box2 {
         border-radius: 0 8px 0 0;
     }
-    main .card-content .box3 {
+    .box3 {
         border-radius: 0 0 8px 8px;
     }
 }
-main .card-content .card-box .text {
+.text {
     width: 100%;
 }
-main .card-content .card-box .text h1 {
+h1, 
+h2, 
+h3 {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
     font-weight: bold;
@@ -120,7 +121,7 @@ main .card-content .card-box .text h1 {
     color: var(--very-light-gray);
     padding: 35px 0 25px;
 }
-main .card-content .card-box .text p {
+p {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     font-weight: normal;
@@ -133,7 +134,7 @@ main .card-content .card-box .text p {
         padding-bottom: 25px;
     }
 }
-main .card-content .card-box button {
+button {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     font-weight: normal;
@@ -143,19 +144,19 @@ main .card-content .card-box button {
     border: none;
     transition: 0.3s;
 }
-main .card-content .card-box button:hover {
+button:hover {
     color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray);
     background-color: transparent;
     cursor: pointer;
 }
-main .card-content .box1 button {
+.box1 button {
     color: var(--bright-orange);
 }
-main .card-content .box2 button {
+.box2 button {
     color: var(--dark-cyan);
 }
-main .card-content .box3 button {
+.box3 button {
     color: var(--very-dark-cyan);
 }
 /* End Card  */
